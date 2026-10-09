@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday My Babieee Doll Anshika! ❤️ With Love from Aavy</title>
+  
+  <!-- Google Fonts for Modern Typography & Romantic Calligraphy -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700;800&family=Sacramento&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 for Premium Modern Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Light Orbs for Dreamy Transparency & Glass Effect -->
+  <div class="ambient-orb orb-1"></div>
+  <div class="ambient-orb orb-2"></div>
+  <div class="ambient-orb orb-3"></div>
+
+  <!-- Interactive Floating Hearts & Sparkles Canvas Background -->
+  <canvas id="canvas-particles"></canvas>
+
+  <!-- Top Glassmorphism Navigation Bar -->
+  <header class="navbar">
+    <a href="#" class="nav-brand">
+      <i class="fa-solid fa-heart brand-heart"></i>
+      <span>Anshika <span style="color: var(--primary-pink); font-size: 0.9em;">&</span> Aavy</span>
+    </a>
+    
+    <div class="nav-actions">
+      <!-- Romantic BGM Audio Player Toggle -->
+      <button class="btn-music-toggle paused" id="musicToggleBtn" title="Toggle Romantic Melody">
+        <div class="music-eq">
+          <span class="eq-bar"></span>
+          <span class="eq-bar"></span>
+          <span class="eq-bar"></span>
+        </div>
+        <i class="fa-solid fa-music"></i>
+        <span class="music-status-text">Play Romantic Music</span>
+      </button>
+
+      <!-- Celebrate Option: Triggers the Cake Blowing Up Spectacular -->
+      <button class="btn-confetti-quick" id="quickConfettiBtn" title="Celebrate & Blow Up The Cake!">
+        <i class="fa-solid fa-cake-candles"></i>
+        <span>Celebrate! 💥</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main class="main-wrapper">
+
+    <!-- Hero Showcase Section -->
+    <section class="hero-section">
+      <div class="badge-tag">
+        <i class="fa-solid fa-crown"></i>
+        <span>Official Birthday Queen • Today & Always</span>
+      </div>
+
+      <div class="avatar-container" title="Aavy & Anshika ❤️">
+        <i class="fa-solid fa-crown avatar-crown"></i>
+        <div class="avatar-ring">
+          <div class="avatar-inner">
+            <img src="aavy-and-anshika.jpg" alt="Aavy & Anshika" class="avatar-real-img">
+          </div>
+        </div>
+      </div>
+
+      <h1 class="hero-title">
+        Happy Birthday, <span class="gradient-text">My Babieee Doll!</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        To My Sweetest Darling, Anshika ❤️
+      </p>
+
+      <div class="hero-tease-box glass-panel">
+        <span class="nakhre-pill"><i class="fa-solid fa-fire"></i> 100% Nakhre</span>
+        <span class="nakhre-pill"><i class="fa-solid fa-cat"></i> Meri Ladaku Billi</span>
+        <span class="nakhre-pill"><i class="fa-solid fa-heart"></i> Attitude Only For Aavy</span>
+      </div>
+
+      <div class="hero-cta-group">
+        <button class="btn-primary-action" data-open-modal="modalGiftBox">
+          <i class="fa-solid fa-gift"></i>
+          <span>Open Surprise Box from Aavy</span>
+        </button>
+        <button class="btn-secondary-action" data-open-modal="modalChocolates">
+          <i class="fa-solid fa-cookie-bite"></i>
+          <span>Virtual Chocolates</span>
+        </button>
+        <button class="btn-secondary-action" data-open-modal="modalHug">
+          <i class="fa-solid fa-people-roof"></i>
+          <span>Aavy & Anshika Hug 🤗</span>
+        </button>
+        <button class="btn-secondary-action" data-open-modal="modalLoveLetter">
+          <i class="fa-solid fa-envelope-open-heart"></i>
+          <span>Read Aavy's Letter</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Interactive Webpages Hub / Icon Grid -->
+    <section class="icons-hub-section">
+      <div class="section-header">
+        <span class="section-tag">Interactive Wonder World</span>
+        <h2 class="section-title">Explore Your Birthday Surprises</h2>
+        <p class="section-desc">
+          Click on any icon card below to open its dedicated interactive webpage crafted specially for my darling!
+        </p>
+      </div>
+
+      <div class="icons-showcase-grid">
+
+        <!-- Card 1: Love Letter from Aavy -->
+        <div class="icon-feature-card theme-letter" data-open-modal="modalLoveLetter">
+          <span class="card-badge">From Aavy</span>
+          <div class="icon-avatar-badge">
+            <i class="fa-solid fa-envelope-open-text"></i>
+          </div>
+          <h3 class="card-title">Love Letter For Babieee Doll</h3>
+          <p class="card-desc">
+            A heartfelt romantic message written exclusively for you by Aavy with pure love.
+          </p>
+          <span class="card-open-link">
+            <span>Read Letter</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </div>
+
+        <!-- Card 2: 3D Surprise Gift Box -->
+        <div class="icon-feature-card theme-gift" data-open-modal="modalGiftBox">
+          <span class="card-badge">Interactive 3D</span>
+          <div class="icon-avatar-badge">
+            <i class="fa-solid fa-gift"></i>
+          </div>
+          <h3 class="card-title">Open The Surprise Box</h3>
+          <p class="card-desc">
+            An animated mystery gift box packed with sparkling surprises and blessings from Aavy!
+          </p>
+          <span class="card-open-link">
+            <span>Unwrap Box</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </div>
+
+        <!-- Card 3: Virtual Chocolate Box -->
+        <div class="icon-feature-card theme-choco" data-open-modal="modalChocolates">
+          <span class="card-badge">Real Treats</span>
+          <div class="icon-avatar-badge">
+            <i class="fa-solid fa-cookie-bite"></i>
+          </div>
+          <h3 class="card-title">Luxury Chocolate Box</h3>
+          <p class="card-desc">
+            6 assorted delicious chocolates with real photos! Peel foil to reveal secret love promises.
+          </p>
+          <span class="card-open-link">
+            <span>Taste Chocolates</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </div>
+
+        <!-- Card 4: Aavy & Anshika Hug Animation -->
+        <div class="icon-feature-card theme-hug" data-open-modal="modalHug">
+          <span class="card-badge">Sweet Embrace</span>
+          <div class="icon-avatar-badge">
+            <i class="fa-solid fa-people-roof"></i>
+          </div>
+          <h3 class="card-title">Aavy & Anshika Hug 🤗</h3>
+          <p class="card-desc">
+            Watch Aavy wrap his arms around his Babieee Doll in a romantic hug with sweet heartbeat sounds!
+          </p>
+          <span class="card-open-link">
+            <span>Watch Hug Animation</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </div>
+
+        <!-- Card 5: Cake Cutting & Candle Blow -->
+        <div class="icon-feature-card theme-cake" data-open-modal="modalCake">
+          <span class="card-badge">Blow Up Mode 💥</span>
+          <div class="icon-avatar-badge">
+            <i class="fa-solid fa-cake-candles"></i>
+          </div>
+          <h3 class="card-title">Cake & Blow Up Spectacular</h3>
+          <p class="card-desc">
+            Light candles, blow them out with a wish, or explode the cake into party fireworks and slices!
+          </p>
+          <span class="card-open-link">
+            <span>Blow Up / Cut Cake</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </div>
+
+        <!-- Card 6: Nakhre & Ladaku Meter -->
+        <div class="icon-feature-card theme-meter" data-open-modal="modalNakhreMeter">
+          <span class="card-badge">Cute & Fun</span>
+          <div class="icon-avatar-badge">
+            <i class="fa-solid fa-cat"></i>
+          </div>
+          <h3 class="card-title">Nakhre & Ladaku Meter</h3>
+          <p class="card-desc">
+            An official scientific breakdown of Anshika's cute fights, drama, and special attitude for Aavy!
+          </p>
+          <span class="card-open-link">
+            <span>Check Attitude Score</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </div>
+
+        <!-- Card 7: Memory Gallery -->
+        <div class="icon-feature-card theme-gallery" data-open-modal="modalGallery">
+          <span class="card-badge">Memories</span>
+          <div class="icon-avatar-badge">
+            <i class="fa-solid fa-camera-retro"></i>
+          </div>
+          <h3 class="card-title">Our Romantic Polaroids</h3>
+          <p class="card-desc">
+            Aesthetic photo frames capturing sweet memories, plus an option to upload your favorite picture!
+          </p>
+          <span class="card-open-link">
+            <span>View Memories</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </div>
+
+        <!-- Card 8: Aavy's 7 Vows -->
+        <div class="icon-feature-card theme-vows" data-open-modal="modalVows">
+          <span class="card-badge">Forever</span>
+          <div class="icon-avatar-badge">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+          </div>
+          <h3 class="card-title">Aavy's 7 Forever Vows</h3>
+          <p class="card-desc">
+            7 unbreakable, humorous, and deeply romantic promises made strictly for Anshika.
+          </p>
+          <span class="card-open-link">
+            <span>Read Promises</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </div>
+
+        <!-- Card 9: Magic Wish Oracle -->
+        <div class="icon-feature-card theme-oracle" data-open-modal="modalOracle">
+          <span class="card-badge">Magic Box</span>
+          <div class="icon-avatar-badge">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <h3 class="card-title">Love Fortune & Wishes</h3>
+          <p class="card-desc">
+            Crack open the magic fortune cookie to reveal special birthday blessings and predictions!
+          </p>
+          <span class="card-open-link">
+            <span>Reveal Fortune</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+      <p class="footer-credit">
+        Happy Birthday to the most gorgeous girl in the universe!
+      </p>
+      <div class="footer-author">
+        With infinite love, Aavy ❤️
+      </div>
+      <p class="footer-love-note">
+        Dedicated to my Babieee Doll, Darling, and favorite Nakhre Queen • Anshika
+      </p>
+    </footer>
+
+  </main>
+
+  <!-- ======================================================================
+       DEDICATED INTERACTIVE WEBPAGES (MODAL DIALOGS)
+       ====================================================================== -->
+
+  <!-- WEBPAGE 1: LOVE LETTER -->
+  <div class="modal-overlay" id="modalLoveLetter">
+    <div class="modal-window">
+      <button class="btn-modal-close" aria-label="Close">&times;</button>
+      <span class="modal-header-badge"><i class="fa-solid fa-heart"></i> Deep From The Heart</span>
+      <h2 class="modal-title">A Letter For My Babieee Doll 💌</h2>
+      <p class="modal-subtitle">Words directly from Aavy to his Darling Anshika</p>
+
+      <div class="letter-parchment">
+        <div class="letter-salutation">My Dearest Anshika,</div>
+        <div class="letter-body">
+          <p>
+            Happy Birthday, my beautiful <span class="letter-highlight">Babieee Doll</span> and my sweet <span class="letter-highlight">Darling</span>! ❤️
+          </p>
+          <p>
+            Today is hands-down the most special day of the year because on this day, the girl who brings the brightest colors into my world was born.
+          </p>
+          <p>
+            I know you are super <span class="letter-highlight">ladaka</span>, and you love starting cute little fights with me over the smallest things. You show attitude and infinite nakhre that are strictly reserved for me—and you know what? <strong>I wouldn't trade your nakhre for anything in this entire world!</strong> 
+          </p>
+          <p>
+            Even when you puff your cheeks, cross your arms, and get angry, you look like the most adorable human on the planet. Your smile is my daily peace, your laughter is my favorite sound, and having you by my side is the greatest blessing of my life.
+          </p>
+          <p>
+            May this year bring you all the endless happiness, success, giggles, and pampering you truly deserve. I promise to always stand by you, listen to all your drama, feed you chocolates, and love you more and more each passing day.
+          </p>
+        </div>
+        <div style="display: flex; justify-content: center; margin: 20px 0 10px;">
+          <div class="polaroid-card" style="width: 180px; padding: 8px 8px 16px; transform: rotate(-2deg); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);">
+            <div class="polaroid-img-wrapper" style="height: 150px;">
+              <img src="aavy-and-anshika.jpg" alt="Aavy & Anshika" style="object-position: center 20%;">
+            </div>
+            <div class="polaroid-caption" style="font-size: 1.15rem; margin-top: 6px;">Babieee Doll & Aavy ❤️</div>
+          </div>
+        </div>
+        <div class="letter-signature">
+          <div class="signature-from">Forever and always yours,</div>
+          <div class="signature-name">Aavy ❤️</div>
+        </div>
+      </div>
+
+      <div class="letter-actions">
+        <button class="btn-primary-action" id="btnVirtualHug">
+          <i class="fa-solid fa-people-roof"></i>
+          <span>Send Aavy a Tight Virtual Hug 🤗</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- WEBPAGE 2: 3D SURPRISE GIFT BOX -->
+  <div class="modal-overlay" id="modalGiftBox">
+    <div class="modal-window">
+      <button class="btn-modal-close" aria-label="Close">&times;</button>
+      <span class="modal-header-badge"><i class="fa-solid fa-gift"></i> Special Delivery</span>
+      <h2 class="modal-title">Aavy's Birthday Surprise Box 🎁</h2>
+      <p class="modal-subtitle">Click the box below to unwrap your special gift!</p>
+
+      <div class="gift-box-stage">
+        <!-- 3D Gift Box Container -->
+        <div class="gift-box-3d" id="giftBoxInteractive">
+          <div class="gift-lid">
+            <i class="fa-solid fa-ribbon lid-bow"></i>
+          </div>
+          <div class="gift-base">
+            <div class="ribbon-vertical"></div>
+            <div class="ribbon-horizontal"></div>
+          </div>
+          <div class="gift-tag">
+            <span>To: Anshika ❤️ From: Aavy</span>
+          </div>
+        </div>
+
+        <!-- Hidden Surprise Content Revealed on Click -->
+        <div class="gift-surprise-reveal" id="giftSurpriseReveal">
+          <div class="surprise-card">
+            <i class="fa-solid fa-crown surprise-icon-large"></i>
+            <h3 style="font-size: 1.6rem; color: #ffd700; margin-bottom: 8px;">The Crown of Queen Anshika 👑</h3>
+            <p style="color: #fce4ec; margin-bottom: 15px; font-size: 1rem; line-height: 1.6;">
+              "You rule over my heart, today and for all eternity. No gift in the world can ever match how precious, gorgeous, and irreplaceable you are to me!"
+            </p>
+            <div style="background: rgba(255, 42, 133, 0.2); padding: 10px 18px; border-radius: var(--radius-full); display: inline-block; color: #ff80bf; font-weight: 600; border: 1px solid rgba(255, 42, 133, 0.4);">
+              <i class="fa-solid fa-ticket"></i> VIP Pass: Unlimited Pampering, Love & Kisses from Aavy
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WEBPAGE 3: REAL LUXURY CHOCOLATE BOX -->
+  <div class="modal-overlay" id="modalChocolates">
+    <div class="modal-window">
+      <button class="btn-modal-close" aria-label="Close">&times;</button>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <span class="modal-header-badge"><i class="fa-solid fa-cookie"></i> Real Sweet Treats</span>
+        <span id="chocoCountBadge" style="color: #ffd700; font-weight: 700; font-size: 0.85rem;">0/6 Enjoyed</span>
+      </div>
+      <h2 class="modal-title">Luxury Chocolate Box 🍫</h2>
+      <p class="modal-subtitle">Click each real chocolate to peel the golden foil and read Aavy's message!</p>
+
+      <div class="chocolates-grid">
+        <!-- Choco 1: Dairy Milk Silk -->
+        <div class="choco-item" data-choco="silk">
+          <div class="choco-bite-badge">❤️ Bitten</div>
+          <div class="choco-img-container">
+            <img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=500&q=80" alt="Dairy Milk Silk Heart" class="choco-real-img" loading="lazy">
+            <div class="choco-foil">
+              <i class="fa-solid fa-sparkles"></i>
+              <span>Unwrap Silk</span>
+            </div>
+          </div>
+          <span class="choco-name">Dairy Milk Silk Heart</span>
+        </div>
+
+        <!-- Choco 2: Ferrero Rocher -->
+        <div class="choco-item" data-choco="ferrero">
+          <div class="choco-bite-badge">❤️ Bitten</div>
+          <div class="choco-img-container">
+            <img src="https://images.unsplash.com/photo-1582293041079-7814c2f12063?auto=format&fit=crop&w=500&q=80" alt="Ferrero Rocher Golden Truffle" class="choco-real-img" loading="lazy">
+            <div class="choco-foil">
+              <i class="fa-solid fa-crown"></i>
+              <span>Unwrap Ferrero</span>
+            </div>
+          </div>
+          <span class="choco-name">Ferrero Rocher Truffle</span>
+        </div>
+
+        <!-- Choco 3: Strawberry Velvet -->
+        <div class="choco-item" data-choco="strawberry">
+          <div class="choco-bite-badge">❤️ Bitten</div>
+          <div class="choco-img-container">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=500&q=80" alt="Strawberry Velvet Ganache" class="choco-real-img" loading="lazy">
+            <div class="choco-foil">
+              <i class="fa-solid fa-heart"></i>
+              <span>Unwrap Berry</span>
+            </div>
+          </div>
+          <span class="choco-name">Strawberry Velvet Kiss</span>
+        </div>
+
+        <!-- Choco 4: Belgian Dark Truffle -->
+        <div class="choco-item" data-choco="dark">
+          <div class="choco-bite-badge">❤️ Bitten</div>
+          <div class="choco-img-container">
+            <img src="https://images.unsplash.com/photo-1548741487-18d16a145e80?auto=format&fit=crop&w=500&q=80" alt="Belgian Dark Truffle" class="choco-real-img" loading="lazy">
+            <div class="choco-foil">
+              <i class="fa-solid fa-moon"></i>
+              <span>Unwrap Dark</span>
+            </div>
+          </div>
+          <span class="choco-name">Dark Belgian Delight</span>
+        </div>
+
+        <!-- Choco 5: Caramel Swirl -->
+        <div class="choco-item" data-choco="caramel">
+          <div class="choco-bite-badge">❤️ Bitten</div>
+          <div class="choco-img-container">
+            <img src="https://images.unsplash.com/photo-1575372587186-502a7428490a?auto=format&fit=crop&w=500&q=80" alt="Caramel Swirl Praline" class="choco-real-img" loading="lazy">
+            <div class="choco-foil">
+              <i class="fa-solid fa-cookie"></i>
+              <span>Unwrap Caramel</span>
+            </div>
+          </div>
+          <span class="choco-name">Caramel Swirl Supreme</span>
+        </div>
+
+        <!-- Choco 6: Nutty Crunch -->
+        <div class="choco-item" data-choco="nutty">
+          <div class="choco-bite-badge">❤️ Bitten</div>
+          <div class="choco-img-container">
+            <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=500&q=80" alt="Nutty Roasted Hazelnut" class="choco-real-img" loading="lazy">
+            <div class="choco-foil">
+              <i class="fa-solid fa-star"></i>
+              <span>Unwrap Nutty</span>
+            </div>
+          </div>
+          <span class="choco-name">Nutty Romance Crunch</span>
+        </div>
+      </div>
+
+      <div class="choco-note-display" id="chocoNoteDisplay">
+        <span>Click on any delicious chocolate above to peel the golden foil and reveal Aavy's message! ✨</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- WEBPAGE 4: AAVY & ANSHIKA HUG ANIMATION -->
+  <div class="modal-overlay" id="modalHug">
+    <div class="modal-window">
+      <button class="btn-modal-close" aria-label="Close">&times;</button>
+      <span class="modal-header-badge"><i class="fa-solid fa-people-roof"></i> Forever & Always</span>
+      <h2 class="modal-title">Aavy & Anshika's Warmest Hug 🤗❤️</h2>
+      <p class="modal-subtitle">Where my Babieee Doll belongs forever and always</p>
+
+      <div class="hug-stage" id="hugStageEl">
+        <div class="hug-couple-container hugging" id="hugCoupleContainer">
+          <!-- Aavy Avatar -->
+          <div class="hug-char char-aavy">
+            <div class="char-head">
+              <div class="char-hair-aavy"></div>
+              <div class="char-face">
+                <div class="char-eyes"><span>^</span><span>^</span></div>
+                <div class="char-blush blush-left"></div>
+                <div class="char-blush blush-right"></div>
+                <div class="char-smile">◡</div>
+              </div>
+            </div>
+            <div class="char-body body-aavy">
+              <div class="char-arm arm-aavy-right"></div>
+            </div>
+            <span class="char-nametag">Aavy ❤️</span>
+          </div>
+
+          <!-- Central Pulsating Glowing Love Heart -->
+          <i class="fa-solid fa-heart hug-heart-center"></i>
+
+          <!-- Anshika Avatar -->
+          <div class="hug-char char-anshika">
+            <div class="char-head">
+              <i class="fa-solid fa-crown char-crown-anshika"></i>
+              <div class="char-hair-anshika"></div>
+              <div class="char-face">
+                <div class="char-eyes"><span>^</span><span>^</span></div>
+                <div class="char-blush blush-left"></div>
+                <div class="char-blush blush-right"></div>
+                <div class="char-smile">◡</div>
+              </div>
+            </div>
+            <div class="char-body body-anshika">
+              <div class="char-arm arm-anshika-left"></div>
+            </div>
+            <span class="char-nametag">My Babieee Doll Anshika 👸</span>
+          </div>
+        </div>
+
+        <p style="text-align: center; color: #fce4ec; max-width: 500px; margin: 15px auto; font-size: 0.98rem; line-height: 1.6;">
+          "No matter how many nakhre you show, or how much you fight like my cute ladaku billi, you are the only one in this whole world who fits perfectly in my arms. Happy Birthday, Darling! ❤️"
+        </p>
+
+        <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 15px;">
+          <button class="btn-primary-action" id="btnSqueezeHug">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <span>Squeeze Hug Tighter! 🤗</span>
+          </button>
+          <button class="btn-secondary-action" id="btnKissShower">
+            <i class="fa-solid fa-kiss-wink-heart"></i>
+            <span>Shower 100 Kisses! 💋</span>
+          </button>
+        </div>
+
+        <!-- The Real Couple Spotlight Frame -->
+        <div class="real-couple-spotlight">
+          <div class="real-couple-frame">
+            <img src="aavy-and-anshika.jpg" alt="Aavy & Anshika">
+          </div>
+          <span class="real-couple-label"><i class="fa-solid fa-heart" style="color: #ff2a85;"></i> The Real Aavy & His Babieee Doll Anshika ❤️</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WEBPAGE 5: CAKE & BLOW UP SPECTACULAR -->
+  <div class="modal-overlay" id="modalCake">
+    <div class="modal-window">
+      <button class="btn-modal-close" aria-label="Close">&times;</button>
+      <span class="modal-header-badge"><i class="fa-solid fa-cake-candles"></i> Celebration Time</span>
+      <h2 class="modal-title">Happy Birthday Cake 🎂</h2>
+      <p class="modal-subtitle">Make a wish, blow out the candles, or trigger the explosive celebration!</p>
+
+      <div class="cake-stage">
+        <!-- Shockwave element for cake explosion -->
+        <div class="explosion-shockwave" id="explosionShockwave"></div>
+
+        <div class="cake-visual" id="cakeVisualEl">
+          <div class="candle-container">
+            <div class="candle"><div class="flame"></div></div>
+            <div class="candle"><div class="flame"></div></div>
+            <div class="candle"><div class="flame"></div></div>
+          </div>
+          <div class="cake-tier-top"></div>
+          <div class="cake-tier-mid"></div>
+          <div class="cake-tier-bot"></div>
+        </div>
+
+        <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
+          <button class="btn-primary-action" id="btnBlowUpCakeDirect" style="background: linear-gradient(135deg, #ff2a85, #ff0055); box-shadow: 0 8px 25px rgba(255, 0, 85, 0.5);">
+            <i class="fa-solid fa-bomb"></i>
+            <span>Blow Up The Cake! 💥</span>
+          </button>
+          <button class="btn-secondary-action" id="btnBlowCandle">
+            <i class="fa-solid fa-wind"></i>
+            <span>Blow Candles & Wish</span>
+          </button>
+          <button class="btn-secondary-action" id="btnCutCake">
+            <i class="fa-solid fa-utensils"></i>
+            <span>Cut First Slice</span>
+          </button>
+        </div>
+
+        <div id="cakeStatusMsg" style="min-height: 50px;">
+          <p style="color: var(--text-soft);">Click "Blow Up The Cake!" or "Celebrate!" in the top bar to watch the cake explode into party fireworks! 🎂💥</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WEBPAGE 6: NAKHRE & LADAKU METER -->
+  <div class="modal-overlay" id="modalNakhreMeter">
+    <div class="modal-window">
+      <button class="btn-modal-close" aria-label="Close">&times;</button>
+      <span class="modal-header-badge"><i class="fa-solid fa-gauge-high"></i> Cute & Funny Tease</span>
+      <h2 class="modal-title">The Official Nakhre Meter 😼</h2>
+      <p class="modal-subtitle">A confidential analysis of Anshika's daily drama for Aavy</p>
+
+      <div class="meter-card">
+        <div class="meter-header">
+          <span><i class="fa-solid fa-fire" style="color: #ff4081;"></i> Nakhre & Drama Level</span>
+          <span style="color: #ff4081;">100% (Unmatched in Galaxy)</span>
+        </div>
+        <div class="meter-progress-track">
+          <div class="meter-progress-fill fill-nakhre"></div>
+        </div>
+      </div>
+
+      <div class="meter-card">
+        <div class="meter-header">
+          <span><i class="fa-solid fa-shield-halved" style="color: #ff9100;"></i> Ladaku Billi Fighting Skills</span>
+          <span style="color: #ff9100;">99.9% (Always Wins Arguments)</span>
+        </div>
+        <div class="meter-progress-track">
+          <div class="meter-progress-fill fill-ladaku"></div>
+        </div>
+      </div>
+
+      <div class="meter-card">
+        <div class="meter-header">
+          <span><i class="fa-solid fa-face-smile-wink" style="color: #e040fb;"></i> Cuteness While Being Angry</span>
+          <span style="color: #e040fb;">1000% (World Record)</span>
+        </div>
+        <div class="meter-progress-track">
+          <div class="meter-progress-fill fill-cute"></div>
+        </div>
+      </div>
+
+      <div class="meter-card">
+        <div class="meter-header">
+          <span><i class="fa-solid fa-heart" style="color: #00e676;"></i> Attitude Exclusivity</span>
+          <span style="color: #00e676;">100% (Only Reserved For Aavy!)</span>
+        </div>
+        <div class="meter-progress-track">
+          <div class="meter-progress-fill fill-love"></div>
+        </div>
+      </div>
+
+      <div class="attitude-facts">
+        <div class="fact-badge">
+          <i class="fa-solid fa-bolt" style="color: #ffd700;"></i>
+          <span>Mood Swing Speed: 0 to 100 in 3 seconds!</span>
+        </div>
+        <div class="fact-badge">
+          <i class="fa-solid fa-comment-slash" style="color: #ff4081;"></i>
+          <span>"Mujhe baat nahi karni" = "Manalo mujhe fast!"</span>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 12px; margin-top: 25px; flex-wrap: wrap;">
+        <button class="btn-primary-action" id="btnSaySorry" style="flex: 1;">
+          <i class="fa-solid fa-hands-praying"></i>
+          <span>Aavy: "Sorry Darling, You're Right!"</span>
+        </button>
+        <button class="btn-secondary-action" id="btnGiveTreat" style="flex: 1;">
+          <i class="fa-solid fa-ice-cream"></i>
+          <span>Offer Virtual Treat</span>
+        </button>
+      </div>
+
+      <div id="meterAlertBox" style="display: none; margin-top: 18px; padding: 14px 20px; border-radius: var(--radius-sm); background: rgba(255, 42, 133, 0.15); border: 1px solid rgba(255, 42, 133, 0.4); text-align: center;"></div>
+    </div>
+  </div>
+
+  <!-- WEBPAGE 7: ROMANTIC MEMORY LANE -->
+  <div class="modal-overlay" id="modalGallery">
+    <div class="modal-window">
+      <button class="btn-modal-close" aria-label="Close">&times;</button>
+      <span class="modal-header-badge"><i class="fa-solid fa-images"></i> Precious Moments</span>
+      <h2 class="modal-title">Our Romantic Memory Lane 📸</h2>
+      <p class="modal-subtitle">Cherishing every little smile and giggle with my darling</p>
+
+      <div class="gallery-grid">
+        <div class="polaroid-card">
+          <div class="polaroid-img-wrapper">
+            <img src="aavy-and-anshika.jpg" alt="Aavy and Anshika" style="object-position: center 20%;">
+          </div>
+          <div class="polaroid-caption">My Babieee Doll & Aavy ❤️</div>
+        </div>
+        <div class="polaroid-card">
+          <div class="polaroid-img-wrapper">
+            <img src="aavy-and-anshika.jpg" alt="Anshika Cute Smile" style="object-position: 72% 28%; transform: scale(1.45);">
+          </div>
+          <div class="polaroid-caption">Ladaku Billi & Nakhre Queen 👸</div>
+        </div>
+        <div class="polaroid-card">
+          <div class="polaroid-img-wrapper">
+            <img src="aavy-and-anshika.jpg" alt="Aavy & Darling" style="object-position: 28% 28%; transform: scale(1.35);">
+          </div>
+          <div class="polaroid-caption">Aavy's Forever Darling 💕</div>
+        </div>
+        <div class="polaroid-card">
+          <div class="polaroid-img-wrapper" id="customPolaroidSlot">
+            <img src="aavy-and-anshika.jpg" alt="Special Memory" style="object-position: center 20%;">
+          </div>
+          <div class="polaroid-caption">Forever & Always ✨</div>
+        </div>
+      </div>
+
+      <div style="margin-top: 25px; text-align: center;">
+        <label for="photoInput" class="btn-secondary-action" style="cursor: pointer; display: inline-flex;">
+          <i class="fa-solid fa-cloud-arrow-up"></i>
+          <span>Upload Real Photo to Polaroid</span>
+        </label>
+        <input type="file" id="photoInput" accept="image/*" style="display: none;">
+      </div>
+    </div>
+  </div>
+
+  <!-- WEBPAGE 8: AAVY'S 7 VOWS -->
+  <div class="modal-overlay" id="modalVows">
+    <div class="modal-window">
+      <button class="btn-modal-close" aria-label="Close">&times;</button>
+      <span class="modal-header-badge"><i class="fa-solid fa-handshake-simple"></i> Unbreakable Bond</span>
+      <h2 class="modal-title">Aavy's 7 Forever Vows 💍</h2>
+      <p class="modal-subtitle">Dedicated promises for my darling Anshika</p>
+
+      <div class="vows-list">
+        <div class="vow-item">
+          <div class="vow-num">1</div>
+          <div>I vow to always admit that you are 100% right in every argument.</div>
+        </div>
+        <div class="vow-item">
+          <div class="vow-num">2</div>
+          <div>I vow to supply you with chocolates whenever you get grumpy or hungry.</div>
+        </div>
+        <div class="vow-item">
+          <div class="vow-num">3</div>
+          <div>I vow to adore your cute nakhre and never complain about your attitude.</div>
+        </div>
+        <div class="vow-item">
+          <div class="vow-num">4</div>
+          <div>I vow to never let you sleep sad or angry, even if I have to apologize 100 times.</div>
+        </div>
+        <div class="vow-item">
+          <div class="vow-num">5</div>
+          <div>I vow to protect that precious smile of yours against the whole world.</div>
+        </div>
+        <div class="vow-item">
+          <div class="vow-num">6</div>
+          <div>I vow to hold your hand through every high and low of life.</div>
+        </div>
+        <div class="vow-item">
+          <div class="vow-num">7</div>
+          <div>I vow to love you more today than yesterday, and more tomorrow than today.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WEBPAGE 9: MAGIC LOVE FORTUNE & WISHES -->
+  <div class="modal-overlay" id="modalOracle">
+    <div class="modal-window">
+      <button class="btn-modal-close" aria-label="Close">&times;</button>
+      <span class="modal-header-badge"><i class="fa-solid fa-crystal-ball"></i> Magic Box</span>
+      <h2 class="modal-title">Love Fortune & Birthday Oracle 🔮</h2>
+      <p class="modal-subtitle">Crack open the magical cookie for today's special prophecy!</p>
+
+      <div style="text-align: center; padding: 30px 10px;">
+        <div style="font-size: 4.5rem; margin-bottom: 20px; animation: heartPulse 2s infinite;">
+          🥠
+        </div>
+
+        <button class="btn-primary-action" id="btnCrackFortune">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <span>Crack Open For Secret Fortune</span>
+        </button>
+
+        <div id="fortuneDisplay" style="margin-top: 25px; padding: 20px; background: rgba(255, 255, 255, 0.06); border: 1px dashed rgba(255, 215, 0, 0.5); border-radius: var(--radius-md); font-size: 1.1rem; color: #ffd700; min-height: 80px; display: flex; align-items: center; justify-content: center;">
+          Click the button above to unlock your birthday fortune!
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
